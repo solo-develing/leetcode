@@ -2,6 +2,7 @@ class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] ans = new int[2];
         HashMap<Integer, Integer> hm = new HashMap<>();
+        // if nums[i] + nums[j] == target then nums[j] = target - nums[i]
         for (int i = 0; i < nums.length; i++) {
             if (hm.containsKey(target - nums[i])) {
                 ans[1] = i;

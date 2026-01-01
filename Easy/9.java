@@ -4,6 +4,7 @@ class Solution {
         if (x < 0) {
             return false;
         }
+        // reversing positive numbers and checking if reverse is the same as input
         int temp = x;
         int reverse = 0;
         while (temp != 0) {
